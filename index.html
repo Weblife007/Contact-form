@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Form</title>
+</head>
+
+<body>
+    <form class="formBody" action="/">
+        <h1>Contact Us</h1>
+        <div class="names">
+            <div class="first">
+                <label for="firstname"> First Name <span>*</span></label>
+                <input type="text" id="firstname" name="firstname">
+                <span class="error"></span>
+            </div>
+            <div class="last">
+                <label for="lastname"> Last Name <span>*</span></label>
+                <input type="text" id="lastname" name="fastname">
+                <span class="error"></span>
+            </div>
+        </div>
+        <div class="email">
+            <label for="email"> Email Address <span>*</span></label>
+            <input type="email" id="email" name="email">
+            <span class="error"></span>
+        </div>
+        <div class="click">
+            <p>Query Type <span>*</span></p>
+            <div id="click-on">
+                <div id="click-on-enquiry">
+                    <input type="radio" name="select" id="enquiry" value="enquiry">
+                    <label for="enquiry">General Enquiry</label>
+                </div>
+                <div id="click-on-request">
+                    <input type="radio" name="select" id="request" value="request">
+                    <label for="request">Support Request</label>
+                </div>
+            </div>
+            <span class="error"></span>
+        </div>
+        <div class="message">
+            <label for="message">Message <span>*</span></label>
+            <textarea name="message" id="message"></textarea>
+            <span class="error"></span>
+        </div>
+        <div class="checkbox">
+            <label for="checkbox">
+                <input type="checkbox" name="checkbox" id="checkbox">
+                I consent to being contacted by the team <span>*</span>
+            </label>
+            <span class="error"></span>
+        </div>
+        <button id="button">Submit</button>
+        <div class="alert" id="alert">
+            <div class="alert-top">
+                <img src="images/icon-success-check.svg" alt="icon-success-check">
+                <h2 class="alert-meg">Message sent!</h2>
+            </div>
+            <p class="alert-p">Thanks for completing the form.We'll be touch soon!</p>
+        </div>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

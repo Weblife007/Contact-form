@@ -1,0 +1,345 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: hsl(148, 38%, 91%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: karla, Georgia, serif;
+}
+
+.formBody {
+    width: 420px;
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.formBody h1 {
+    font-size: 1.1rem;
+    margin: 5px 0 10px 0;
+}
+
+.names {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 0 5px;
+}
+
+label {
+    display: block;
+    font-size: 0.8em;
+    margin: 2px 0;
+}
+
+.names input {
+    width: 185px;
+    height: 30px;
+    border-radius: 5px;
+    border-width: 1px;
+    font-size: 0.8em;
+    text-indent: 10px;
+}
+
+.names input:hover {
+    border: 1px solid hsl(169, 82%, 27%);
+}
+
+.names input:focus {
+    cursor: auto;
+    outline-width: 0px;
+}
+
+.email {
+    margin: 5px 0 5px;
+}
+
+.email input {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border-width: 1px;
+    font-size: 0.8em;
+    text-indent: 10px;
+}
+
+.email input:hover {
+    border: 1px solid hsl(169, 82%, 27%);
+}
+
+.email input:focus {
+    cursor: auto;
+    outline-width: 0px;
+}
+
+.click {
+    margin: 5px 0 5px;
+}
+
+.click p {
+    font-size: 0.8em;
+    margin: 2px 0;
+}
+
+#click-on {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#click-on div {
+    width: 170px;
+    height: 30px;
+    padding: 5px;
+    font-size: 0.8em;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#click-on input {
+    margin: 10px;
+    accent-color: hsl(169, 82%, 27%);
+}
+
+#click-on div:active {
+    background-color: hsl(148, 38%, 91%);
+}
+
+.message {
+    margin: 5px 0 10px;
+}
+
+.message textarea {
+    width: 100%;
+    height: 80px;
+    resize: none;
+    border-radius: 5px;
+    border-width: 1px;
+    font-size: 0.8em;
+    padding: 5px 10px 5px 10px;
+}
+
+.message textarea:hover {
+    border: 1px solid hsl(169, 82%, 27%);
+    cursor: pointer;
+}
+
+.message textarea:focus {
+    cursor: auto;
+    outline-width: 0px;
+}
+
+.checkbox label {
+    display: flex;
+    align-items: center;
+    margin: 5px 0 10px;
+}
+
+.checkbox input {
+    margin-right: 15px;
+    accent-color: hsl(169, 82%, 27%);
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+#button {
+    width: 100%;
+    height: 35px;
+    background-color: hsl(169, 82%, 27%);
+    color: hsl(0, 0%, 100%);
+    font-size: 0.8em;
+    border-radius: 5px;
+    border-width: 1px;
+    border: none;
+    margin-top: 5px;
+}
+
+#button:hover {
+    background-color: hsl(169, 53%, 22%);
+    cursor: pointer;
+}
+
+span {
+    color: hsl(169, 82%, 27%);
+    font-size: 0.8em;
+}
+
+.error input {
+    border-color: hsl(0, 66%, 54%);
+}
+
+.error label {
+    color: black;
+}
+
+.error textarea {
+    border-color: hsl(0, 66%, 54%);
+}
+
+.error p {
+    color: black;
+}
+
+.error {
+    color: hsl(0, 66%, 54%);
+    font-size: .8em;
+}
+
+.alert {
+    width: 300px;
+    background-color: hsl(187, 24%, 22%);
+    position: absolute;
+    top: -50px;
+    margin-left: 40px;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    visibility: hidden;
+}
+
+.open-alert {
+    width: 300px;
+    background-color: hsl(187, 24%, 22%);
+    position: absolute;
+    top: -50px;
+    margin-left: 40px;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    visibility: visible;
+}
+
+.alert-top {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.6rem;
+    padding: 10px;
+    padding-bottom: 5px;
+}
+
+img {
+    margin-right: 10px;
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+}
+
+.alert p {
+    font-size: 0.7rem;
+    padding: 10px;
+    padding-top: 5px;
+}
+
+
+
+
+@media (max-width:430px) {
+    .formBody {
+        width: 90%;
+        margin: 0, auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .names {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .names input {
+        width: 100%;
+        height: 40px;
+    }
+
+    .email input {
+        width: 100%;
+        height: 40px;
+    }
+
+    #click-on {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #click-on div {
+        width: 100%;
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    .message textarea {
+        width: 100%;
+        height: 140px;
+        margin-top: 5px;
+    }
+
+    #button {
+        width: 100%;
+        height: 45px;
+        margin-top: 5px;
+    }
+}
